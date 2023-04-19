@@ -1,0 +1,34 @@
+a{
+    text-decoration: none;
+}
+img{
+    width: 30%;
+    height: auto;
+}
+.product-name{
+    font-size: 1.5rem;
+}
+.row{
+    margin: 2rem;
+}
+.price{
+    font-size: 1.4rem;
+}
+.buy {
+    font-size: 1.5rem;
+    text-align: center;
+    max-height: 30px;
+    border: solid transparent 2px;
+    background-color: #b5e2fa;
+}
+
+.buy:hover{
+    animation: white-mode 10s alternate linear;
+}
+@keyframes white-mode {
+    0%{background: #386641; color: black};
+    25%{background: #a7c957; color: black};
+    50%{background: #bc4749;color: black};
+    75%{background: #f2e8cf; color: black};
+    100%{background: #6a994e; color: black;}
+}

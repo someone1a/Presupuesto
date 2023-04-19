@@ -1,0 +1,19 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.componentes{
+    margin: 1.5rem;
+}
+.componentes article{
+    margin: 1rem;
+}
+.article{
+    font-size: 1.5rem;
+}
+.price{
+    color: green;
+}
+img{
+    max-height: 300px;
+    width: auto;
+}
