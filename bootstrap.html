@@ -16,8 +16,8 @@
         <h1>Presupuesto Arquitectura</h1>
     </header>
     <main class="container-fluid">
-        <p>Los componentes utilizados son los siguientes:</p>
-        <section class="row">
+        <button class="accordion">Microprocesador</button>
+        <div class="row panel">
             <h2 class="product">Microprocesador</h2>
             <div class="col">
                 <span class="product-name">Intel Core I5 11-400</span>
@@ -31,11 +31,55 @@
                     class="buy">Ver Producto en Mercado Libre</a>
             </div>
             <div class="col">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_766062-MLA47177160024_082021-O.webp" alt="mercadolibre">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_766062-MLA47177160024_082021-O.webp" alt="mercado libre">
             </div>
-        </section>
+        </div>
+        <button class="accordion">Placa Madre</button>
+        <div class="panel row">
+            <h2 class="product">Motherboard</h2>
+            <div class="col">
+                <span class="product-name">Asus Prime B460m-a</span>
+                <ul>
+                    <li>Socket 1200</li>
+                    <li>Tipo de memoria RAM: DDR4</li>
+                    <li>
+                        Capacidad máxima soportada de la memoria RAM: 128 GB</li>
+                    <li>Tamaño: 24.4cm x 24.4cm</li>
+                    <li>Ranuras de expansión: 1 x pcie 4.0/3.0 x16 + 1 x pcie 3.0 x16 (max. x4)</li>
+                </ul>
+                <span class="price">Precio: $41.999</span><br>
+                <a href="https://www.mercadolibre.com.ar/motherboard-asus-prime-b460m-a-r20-intel-socket-1200-intel-color-negro/p/MLA22570454?pdp_filters=category:MLA1692#searchVariation=MLA22570454&position=1&search_layout=grid&type=product&tracking_id=dfa5a8b7-c942-4bef-97c4-6eac0f5db045"
+                    class="buy">Ver Producto en mercado libre</a>
+            </div>
+            <div class="col">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_739161-MLA48407790592_122021-O.webp" alt="Mercado Libre">
+            </div>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
     </main>
     <footer></footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
