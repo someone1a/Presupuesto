@@ -1,19 +1,88 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.componentes{
-    margin: 1.5rem;
-}
-.componentes article{
-    margin: 1rem;
-}
-.article{
-    font-size: 1.5rem;
-}
-.price{
-    color: green;
-}
-img{
-    max-height: 300px;
-    width: auto;
-}
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  a:hover{
+      text-decoration: underline;
+  }
+  img{
+      width: 30%;
+      height: auto;
+  }
+  .product-name{
+      font-size: 3.5rem;
+  }
+  .price{
+      font-size: 1.4rem;
+  }
+  
+  .buy {
+      font-size: 1.8rem;
+      text-align: center;
+      max-height: 40px;
+      border: solid transparent 2px;
+      background-color: #b5e2fa;
+  }
+  
+  .center{
+    text-align: center;
+  }
+  .total{
+    margin-top: 2rem;
+    margin: 0 auto;
+    max-width: 850px;
+    border: solid black 1px;
+    border-radius: 15px;
+  }
+  .total ul{
+    list-style: none;
+  }
+  .buy:hover{
+      animation: white-mode 10s alternate linear;
+  }
+  .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+    
+    .accordion:after {
+      content: '\002B';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  @keyframes white-mode {
+      0%{background: #386641; color: black};
+      25%{background: #a7c957; color: black};
+      50%{background: #bc4749;color: black};
+      75%{background: #f2e8cf; color: black};
+      100%{background: #6a994e; color: black;}
+  }
